@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="b">
+<!-- id 중복불가능
+	 다른 매핑 파일내의 다른 태그의 id 중복 가능 -->
+	<select id="memberList" resultType="memberdto">
+		select * from members
+	</select>  
+</mapper>
